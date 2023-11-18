@@ -69,7 +69,7 @@ class GUI : JFrame() {
 	init {
 		title = "Hummel009's File Comparator"
 		defaultCloseOperation = EXIT_ON_CLOSE
-		setBounds(100, 100, 400, 150)
+		setBounds(100, 100, 500, 150)
 
 		val contentPanel = JPanel()
 		contentPanel.border = EmptyBorder(5, 5, 5, 5)
