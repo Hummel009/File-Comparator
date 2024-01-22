@@ -1,3 +1,5 @@
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Hummel009_File-Comparator&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Hummel009_File-Comparator)
+
 Программа для сравнения двух файлов побайтово. Разработана по просьбе сервера Black Dragon: The Second Age, когда админы проверяли, есть ли в сторонней версии мода на Minecraft что-то новое, кроме названия.
 
 ## Общая информация
