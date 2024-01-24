@@ -9,7 +9,8 @@
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=Hummel009_File-Comparator&metric=sqale_index)](https://sonarcloud.io/summary/overall?id=Hummel009_File-Comparator)
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Hummel009_File-Comparator&metric=ncloc)](https://sonarcloud.io/summary/overall?id=Hummel009_File-Comparator)
 
-Программа для сравнения двух файлов побайтово. Разработана по просьбе сервера Black Dragon: The Second Age, когда админы проверяли, есть ли в сторонней версии мода на Minecraft что-то новое, кроме названия.
+Программа для сравнения двух файлов побайтово. Разработана по просьбе сервера Black Dragon: The Second Age, когда админы
+проверяли, есть ли в сторонней версии мода на Minecraft что-то новое, кроме названия.
 
 ## Общая информация
 
