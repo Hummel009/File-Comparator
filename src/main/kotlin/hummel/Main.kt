@@ -55,21 +55,16 @@ class GUI : JFrame() {
 			return
 		}
 		val isEqual = isEqual(firstFile.toPath(), secondFile.toPath())
-		if (isEqual) {
-			JOptionPane.showMessageDialog(
-				this, "Files are equal", "Message", JOptionPane.INFORMATION_MESSAGE
-			)
-		} else {
-			JOptionPane.showMessageDialog(
-				this, "Files are not equal", "Message", JOptionPane.INFORMATION_MESSAGE
-			)
-		}
+		val string = if (isEqual) "Files are equal" else "Files are not equal"
+		JOptionPane.showMessageDialog(
+			this, string, "Message", JOptionPane.INFORMATION_MESSAGE
+		)
 	}
 
 	init {
 		title = "Hummel009's File Comparator"
 		defaultCloseOperation = EXIT_ON_CLOSE
-		setBounds(100, 100, 500, 150)
+		setBounds(100, 100, 600, 200)
 
 		val contentPanel = JPanel()
 		contentPanel.border = EmptyBorder(5, 5, 5, 5)
@@ -78,8 +73,8 @@ class GUI : JFrame() {
 		contentPane = contentPanel
 
 		val inputPanel = JPanel()
-		val inputLabel = JLabel("Input path:")
-		inputLabel.preferredSize = Dimension(80, inputLabel.preferredSize.height)
+		val inputLabel = JLabel("File 1 path:")
+		inputLabel.preferredSize = Dimension(90, inputLabel.preferredSize.height)
 		val inputField = JTextField(24)
 		val inputButton = JButton("Select path")
 		inputButton.addActionListener { selectPath(inputField) }
@@ -88,8 +83,8 @@ class GUI : JFrame() {
 		inputPanel.add(inputButton)
 
 		val outputPanel = JPanel()
-		val outputLabel = JLabel("Output path:")
-		outputLabel.preferredSize = Dimension(80, outputLabel.preferredSize.height)
+		val outputLabel = JLabel("File 2 path:")
+		outputLabel.preferredSize = Dimension(90, outputLabel.preferredSize.height)
 		val outputField = JTextField(24)
 		val outputButton = JButton("Select path")
 		outputButton.addActionListener { selectPath(outputField) }
@@ -98,7 +93,7 @@ class GUI : JFrame() {
 		outputPanel.add(outputButton)
 
 		val processPanel = JPanel()
-		val processButton = JButton("Process")
+		val processButton = JButton("Compare")
 		processButton.addActionListener {
 			process(inputField, outputField)
 		}
